@@ -1,0 +1,26 @@
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"],
+    // "plugins": ["babel-plugin-transform-class-properties", "transform-es2015-arrow-functions", "@babel/plugin-proposal-class-properties"]
+    "plugins": [
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ["babel-plugin-transform-class-properties"],
+        ["babel-plugin-transform-es2015-arrow-functions"]
+        
+        
+        // we get error of some sort while adding this plugin
+        //["babel-plugin-transform-scss"]
+        // [
+        //   "babel-plugin-transform-require-ignore", { "extensions": [".less", ".css"] }
+        // ]
+      ]
+}
+
+
+
+// {
+//     "plugins": [
+//       ["@babel/plugin-proposal-class-properties", { "loose": true }],
+//       ["transform-class-properties"],
+//       ["transform-es2015-arrow-functions"]
+//     ]
+//   }
